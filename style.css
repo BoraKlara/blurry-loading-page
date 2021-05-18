@@ -19,23 +19,19 @@ body {
 /*
 https://unsplash.com/photos/Gdufctyvzjo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink*/
 
-section {
-  position: relative;
-}
-
 .bg {
-  background: url("jean-philippe-delberghe-Gdufctyvzjo-unsplash.jpg") no-repeat
-    center center/cover;
+  background: url("img/jean-philippe-delberghe-Gdufctyvzjo-unsplash.jpg")
+    no-repeat center center/cover;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -2;
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  z-index: -1;
   filter: blur(0px);
 }
 
-.overlay {
+/* .overlay {
   width: 100vw;
   height: 100vh;
 
@@ -44,7 +40,8 @@ section {
 
   opacity: 0.7;
   z-index: -1;
-}
+  filter: blur(0px);
+} */
 
 .loading__text {
   font-size: 50px;
